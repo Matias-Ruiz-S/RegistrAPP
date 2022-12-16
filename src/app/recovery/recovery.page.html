@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="tertiary">Restablecer contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="tertiary">
+  <ion-row>
+    <ion-item color="tertiary">
+      <ion-label>Escriba su nombre de usuario</ion-label>
+    </ion-item>
+  </ion-row>
+  <ion-item lines="full">
+    <ion-label position="floating" color="tertiary">Nombre de Usuario</ion-label>
+    <ion-input type="text" [(ngModel)]="user.usuario" color="tertiary"></ion-input>
+  </ion-item>
+  <ion-row>
+    <ion-col>
+      <ion-button expand="full" color="warning" (click)="login()">RECUPERAR</ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-button expand="full" color="light" (click)="login()">Volver</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>

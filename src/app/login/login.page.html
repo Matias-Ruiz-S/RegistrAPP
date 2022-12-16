@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="tertiary">Ingreso de usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-item lines="none" color="warning">
+  <ion-label><img src="assets/img/applogowhite.png" alt="RegistrAPP"></ion-label>
+</ion-item>
+<ion-content color="tertiary">
+  <ion-item lines="full">
+    <ion-label position="floating" color="tertiary">Nombre de Usuario</ion-label>
+    <ion-input type="text" [(ngModel)]="user.usuario" color="tertiary"></ion-input>
+  </ion-item>
+  <ion-item lines="full">
+    <ion-label position="floating" color="tertiary">Contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="user.password" color="tertiary"></ion-input>
+  </ion-item>
+  <ion-row>
+    <ion-col>
+      <ion-button expand="full" color="warning" (click)="ingresar()">INGRESAR</ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-button expand="full" color="light" (click)="recuperar()">Restablecer contraseña</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>
